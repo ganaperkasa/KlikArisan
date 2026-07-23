@@ -15,10 +15,16 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="../index.html">
+      <a class="nav-link" href="{{ route('dashboard') }}">
         <span class="menu-title">Dashboard</span>
         <i class="mdi mdi-home menu-icon"></i>
       </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('account') }}" >
+        <span class="menu-title">Pengguna</span>
+        <i class="mdi mdi-contacts menu-icon"></i>
+      </a>      
     </li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
