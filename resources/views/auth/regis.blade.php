@@ -27,20 +27,31 @@
           <div class="row flex-grow">
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
+
                 <div class="brand-logo">
                   {{-- <img src="{{ asset('assets/images/logo.svg') }}"> --}}
                 </div>
                 <h4>New here?</h4>
                 <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
-                <form class="pt-3">
+                <form method="POST" action="{{ route('register.store') }}">
+                    @csrf
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username">
+                    <input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control form-control-lg"  placeholder="Username">
+                    @error('name')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control form-control-lg"  placeholder="Email">
+                    @error('email')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" id="password" name="password" class="form-control form-control-lg"  placeholder="Password">
+                    @error('password')
+                        <span class="text-danger">{{ $message }}</span>
+                    @enderror
                   </div>
                   {{-- <div class="mb-4">
                     <div class="form-check">
@@ -49,7 +60,7 @@
                     </div>
                   </div> --}}
                   <div class="mt-3 d-grid gap-2">
-                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">SIGN UP</a>
+                    <button type="submit" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" >SIGN UP</button>
                   </div>
                   <div class="text-center mt-4 font-weight-light"> Already have an account? <a href="{{ route('login') }}" class="text-primary">Login</a>
                   </div>

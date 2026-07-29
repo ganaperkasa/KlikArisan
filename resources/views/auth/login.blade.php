@@ -27,6 +27,11 @@
           <div class="row flex-grow">
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
+                  @if(session('success'))
+                      <div class="alert alert-success">
+                          {{ session('success') }}
+                      </div>
+                  @endif
                 <div class="brand-logo">
                   {{-- <img src="../../assets/images/logo.svg"> --}}
                 </div>
