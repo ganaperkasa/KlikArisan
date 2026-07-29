@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Admin</title>
+    <title>Register - KlikArisan</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/ti-icons/css/themify-icons.css') }}">
@@ -28,7 +28,7 @@
             <div class="col-lg-4 mx-auto">
               <div class="auth-form-light text-left p-5">
                 <div class="brand-logo">
-                  <img src="{{ asset('assets/images/logo.svg') }}">
+                  {{-- <img src="{{ asset('assets/images/logo.svg') }}"> --}}
                 </div>
                 <h4>New here?</h4>
                 <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
@@ -42,12 +42,12 @@
                   <div class="form-group">
                     <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                   </div>
-                  <div class="mb-4">
+                  {{-- <div class="mb-4">
                     <div class="form-check">
                       <label class="form-check-label text-muted">
                         <input type="checkbox" class="form-check-input"> I agree to all Terms & Conditions </label>
                     </div>
-                  </div>
+                  </div> --}}
                   <div class="mt-3 d-grid gap-2">
                     <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">SIGN UP</a>
                   </div>
