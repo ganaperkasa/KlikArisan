@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" />
-    
+
   </head>
   <body>
     <div class="container-scroller">
@@ -58,7 +58,7 @@
                     <a href="#" class="auth-link text-primary">Forgot password?</a>
                   </div> --}}
 
-                  <div class="text-center mt-4 font-weight-light"> Don't have an account? <a href="{{ route('register') }}" class="text-primary">Create</a>
+                  <div class="text-center mt-4 font-weight-light"> V-1 GP
                   </div>
                 </form>
               </div>
